@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environment (CRITICAL - Do not upload this)
+venv/
+.venv/
+env/
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Environment Variables (Secrets)
+.env
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Media
+media/
