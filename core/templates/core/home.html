@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Collem</title>
+    </head>
+    <body>
+        <h1>Welcome to Collem</h1>
+        <h3>Stored Files: </h3>
+
+        <ul>
+            {% for asset in assets %}
+                <li>
+                    <strong>File:</strong> 
+                    <img src = '{{asset.file.url}}' alt = 'User Upload' width = 200> <br>
+                    <small>Status: {{asset.status}}</small>
+                </li>
+            {% empty %}
+                <li>No files found yet</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
